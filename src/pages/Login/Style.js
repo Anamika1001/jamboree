@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     sideImage:{
-        width:'300px',
-        height:'400px',
+        width:'450px',
+        height:'550px',
         backgroundImage:`url(${"https://source.unsplash.com/random"})`,
         backgroundRepeat:'no-repeat',
         backgroundSize:'cover',
@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
         // flexDirection:'column',
          // alignItems:'center',
         // marginRight:'200px'
+    },
+    loginPagePaper:{
+        marginRight:'200px',
         
     },
 }))

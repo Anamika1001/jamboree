@@ -1,4 +1,4 @@
-import { Avatar, CssBaseline, Grid, Typography } from '@material-ui/core';
+import { Avatar, CssBaseline, Grid, Paper, Typography } from '@material-ui/core';
 import React from 'react'
 import useStyles from './Style';
 import { Box } from '@material-ui/core';
@@ -18,53 +18,56 @@ const Login = () => {
                 <Grid item md={6}>
                     <div className={classes.sideImage}></div>
                 </Grid>
-                <Grid item md={6}>
+                <Grid item md={6} >
+                    <Paper elevation={10} className={classes.loginPagePaper}>
                     <div className={classes.login}>
                         <Typography variant='h6'>Login to your account</Typography>
                         <Typography variant='subtitle2'>Login with Jamsaree ID & Password</Typography>
                     </div>
-                    <div noValidate component="form">
-                        <TextField
-                            margin="normal" className={classes.textField} required fullWidth id="email" label="Email Address" name="email" placeholder='Enter your email-id' autoComplete="email" autoFocus
-                        />
-                        <TextField
-                            margin="normal" required fullWidth id="password" label="Password" name="password" placeholder='Enter your password' type='password' autoComplete="password" autoFocus
-                        />
-                        <div>
-                            <FormControlLabel
-                                control={<Checkbox value="remember" color="primary" />}
-                                label="Remember me"
+                        <div noValidate component="form">
+                            <TextField
+                                margin="normal" className={classes.textField} required fullWidth id="email" label="Email Address" name="email" placeholder='Enter your email-id' autoComplete="email" autoFocus
                             />
+                            <TextField
+                                margin="normal" required fullWidth id="password" label="Password" name="password" placeholder='Enter your password' type='password' autoComplete="password" autoFocus
+                            />
+                            <div>
+                                <FormControlLabel
+                                    control={<Checkbox value="remember" color="primary" />}
+                                    label="Remember me"
+                                />
+                                <Link href="#" variant="body2">
+                                    Forgot password?
+                                </Link>
+                            </div>
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                            >
+                                Sign In
+                            </Button>
+                            <Typography>or</Typography>
+                            <Button
+
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                            >
+                                Google
+                            </Button>
                             <Link href="#" variant="body2">
-                                Forgot password?
+                                {"Don't have an account? Sign Up"}
                             </Link>
                         </div>
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            sx={{ mt: 3, mb: 2 }}
-                        >
-                            Sign In
-                        </Button>
-                        <Typography>or</Typography>
-                        <Button
-
-                            fullWidth
-                            variant="contained"
-                            sx={{ mt: 3, mb: 2 }}
-                        >
-                            Google
-                        </Button>
-                        <Link href="#" variant="body2">
-                            {"Don't have an account? Sign Up"}
-                        </Link>
-                    </div>
+                    </Paper>
                 </Grid>
+
             </Grid>
 
 
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 export default Login;

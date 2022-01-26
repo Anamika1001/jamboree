@@ -86,6 +86,7 @@ const Home = () => {
             </Typography>
           </div>
         </div>
+
         <Container>
           <Typography className={classes.whyus}>
             <span className={classes.whyusCapital}>W</span>HY US<span className={classes.whyusCapital}>?</span>
@@ -182,9 +183,10 @@ const Home = () => {
         </Container>
         <Container>
           <Grid container className={classes.linebarGrid}>
-            <Hidden smDown><Grid item sm={4} xs={12}>
-              <img className={classes.linebarSideContentImage} src='https://cdn.makespace.com/blog/wp-content/uploads/2016/10/20165515/how-to-organize-your-closet1.jpg' />
-            </Grid>
+            <Hidden smDown>
+              <Grid item sm={4} xs={12}>
+                <img className={classes.linebarSideContentImage} src='https://cdn.makespace.com/blog/wp-content/uploads/2016/10/20165515/how-to-organize-your-closet1.jpg' />
+              </Grid>
             </Hidden>
             <Grid item sm={4} xs={12}>
               <div className={classes.linebarMainDiv}>
@@ -203,71 +205,72 @@ const Home = () => {
           </Grid>
         </Container>
         <Container>
-        <Typography>CUSTOMER REVIEWS</Typography>
+          <Typography>CUSTOMER REVIEWS</Typography>
           <Grid container>
             <Grid item sm={3}>
               <Card className={classes.cardPlacedReviews}>
-              <CardHeader
-              avatar={
-                <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
-              }
-              title="Lorem ipsum"
-              subheader="4.3 ⭐⭐⭐⭐"
-              />
-              <CardContent>
-              <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
-              </CardContent>
+                <CardHeader
+                  avatar={
+                    <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
+                  }
+                  title="Lorem ipsum"
+                  subheader="4.3 ⭐⭐⭐⭐"
+                />
+                <CardContent>
+                  <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
+                </CardContent>
               </Card>
             </Grid>
             <Grid item sm={3}>
               <Card className={classes.cardPlacedReviews}>
-              <CardHeader
-              avatar={
-                <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
-              }
-              title="Lorem ipsum"
-              subheader="4.3 ⭐⭐⭐⭐"
-              />
-              <CardContent>
-              <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
-              </CardContent>
+                <CardHeader
+                  avatar={
+                    <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
+                  }
+                  title="Lorem ipsum"
+                  subheader="4.3 ⭐⭐⭐⭐"
+                />
+                <CardContent>
+                  <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
+                </CardContent>
               </Card>
             </Grid>
             <Grid item sm={3}>
               <Card className={classes.cardPlacedReviews}>
-              <CardHeader
-              avatar={
-                <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
-              }
-              title="Lorem ipsum"
-              subheader="4.3 ⭐⭐⭐⭐"
-              />
-              <CardContent>
-              <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
-              </CardContent>
+                <CardHeader
+                  avatar={
+                    <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
+                  }
+                  title="Lorem ipsum"
+                  subheader="4.3 ⭐⭐⭐⭐"
+                />
+                <CardContent>
+                  <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
+                </CardContent>
               </Card>
             </Grid>
             <Grid item sm={3}>
               <Card className={classes.cardPlacedReviews}>
-              <CardHeader
-              avatar={
-                <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
-              }
-              title="Lorem ipsum"
-              subheader="4.3 ⭐⭐⭐⭐"
-              />
-              <CardContent>
-              <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
-              </CardContent>
+                <CardHeader
+                  avatar={
+                    <Avatar src='https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZ2lybHN8ZW58MHx8MHx8&w=1000&q=80'></Avatar>
+                  }
+                  title="Lorem ipsum"
+                  subheader="4.3 ⭐⭐⭐⭐"
+                />
+                <CardContent>
+                  <Typography variant='subtitle2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an u</Typography>
+                </CardContent>
               </Card>
             </Grid>
           </Grid>
         </Container>
+
       </main>
-    <footer>
-    <div classname={classes.footer}>
-    </div>
-    </footer>
+      <footer>
+        <div classname={classes.footer}>
+        </div>
+      </footer>
     </React.Fragment>
   )
 }

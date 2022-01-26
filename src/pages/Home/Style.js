@@ -4,11 +4,6 @@ const useStyles = makeStyles((theme) => ({
     navbar: {
         color: 'rgba(91, 0, 0, 1)',
         backgroundColor: 'white',
-
-        left: '0px',
-        top: '0px',
-        borderRadius: '0px',
-        margin: '0px'
     },
     typography: {
         fontFamily: "allura",
@@ -229,7 +224,7 @@ const useStyles = makeStyles((theme) => ({
         paddingTop:'15px'
     },
     linebarSideContentImage:{
-        width:'588px',
+        
         height:'300px',
         objectFit:'cover',
         borderTopLeftRadius:'220px',
