@@ -1,0 +1,15 @@
+.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}

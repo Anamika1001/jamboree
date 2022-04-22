@@ -1,0 +1,15 @@
+.image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.imgContent{
+    text-align: center;
+    margin: 0;
+}
+.Content{
+    text-align: center;
+}

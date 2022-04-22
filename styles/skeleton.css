@@ -1,0 +1,33 @@
+/* Category */
+.cat .skeleton{
+    background: #ddd;
+    margin: 10px 0px;
+    border-radius: 4px;
+  }
+.cat .text{
+    width: 100%;
+    height: 20px;
+  }
+
+.cat .image{
+    width: 250px;
+    height: 300px;
+  }
+
+
+
+/* Orders */
+.od .skeleton{
+    background: red;
+    margin: 10px 0px;
+    border-radius: 4px;
+  }
+.od .image{
+    width: 100%;
+    height: 20px;
+  }
+
+.od .text{
+    width: 250px;
+    height: 300px;
+  }
